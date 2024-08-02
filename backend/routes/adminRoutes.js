@@ -6,7 +6,7 @@ import {
 } from '../controllers/adminController.js';
 import authenticateToken from '../middleware/authMiddleware.js';
 import checkAdmin from '../middleware/adminMiddleware.js';
-import upload from '../utils/storage.js';
+import { pdfUpload } from '../utils/storage.js';
 
 const router = express.Router();
 
@@ -16,7 +16,7 @@ router.post(
   '/users/:id/pdf',
   authenticateToken,
   checkAdmin,
-  upload.single('pdf'),
+  pdfUpload.single('pdf'),
   uploadUserPdf
 );
 router.delete('/users/:id', authenticateToken, checkAdmin, removeUser);

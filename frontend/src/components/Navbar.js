@@ -24,7 +24,7 @@ export default function Navbar() {
   const { user, setUser } = useAuth();
   const [drawerOpen, setDrawerOpen] = React.useState(false);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const handleLogout = async () => {
     localStorage.removeItem('token');

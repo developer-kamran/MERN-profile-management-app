@@ -3,8 +3,10 @@ import {
   getUserProfile,
   updateUserProfile,
   deleteUserProfile,
+  uploadProfileImage,
 } from '../controllers/userController.js';
 import authenticateToken from '../middleware/authMiddleware.js';
+import { imageUpload } from '../utils/storage.js';
 
 const router = express.Router();
 
@@ -15,5 +17,11 @@ router
   .delete(authenticateToken, deleteUserProfile);
 
 router.get('/profile/:id', authenticateToken, getUserProfile);
+router.post(
+  '/profile/image',
+  authenticateToken,
+  imageUpload.single('profileImage'),
+  uploadProfileImage
+);
 
 export default router;

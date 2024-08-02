@@ -18,6 +18,7 @@ import {
   useTheme,
   IconButton,
   Tooltip,
+  Box,
 } from '@mui/material';
 
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
@@ -28,7 +29,7 @@ const AdminDashboard = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(false);
   const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
 
   const fetchUsers = async () => {
     setLoading(true);
@@ -125,7 +126,34 @@ const AdminDashboard = () => {
               <TableRow key={user._id}>
                 <TableCell>{index + 1}</TableCell>
                 <TableCell>
-                  <Avatar src='null' alt={user.name} />
+                  <Box
+                    sx={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      width: 60,
+                      height: 60,
+                      borderRadius: '50%',
+                      overflow: 'hidden',
+                      border: '2px solid',
+                      borderColor: 'grey.300',
+                      mb: 2,
+                    }}
+                  >
+                    <img
+                      src={
+                        user?.profileImage
+                          ? `http://localhost:5000${user?.profileImage}`
+                          : './user.png'
+                      }
+                      alt={user?.name}
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                      }}
+                    />
+                  </Box>
                 </TableCell>
                 <TableCell>
                   <Link
