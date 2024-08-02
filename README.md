@@ -2,30 +2,6 @@
 
 ## Overview
 
-This is a MERN stack application that includes features such as user authentication, profile management, and an admin dashboard. The application is designed to handle user registration, login, profile updates, and more. 
-
-## Features
-
-- **User Authentication**: Register, login, and manage user sessions.
-- **Profile Management**: Update user profile information and profile images.
-- **Admin Dashboard**: View and manage user profiles (accessible only to admin users).
-- **Responsive Design**: Optimized for both desktop and mobile screens.
-
-## Technologies Used
-
-- **Frontend**: React, Material-UI
-- **Backend**: Node.js, Express.js, MongoDB
-- **Authentication**: JSON Web Tokens (JWT)
-- **State Management**: React Context API
-- **Styling**: Material-UI for component styling
-
-## Installation
-
-To get started with the application, follow these steps:
-# MERN Stack Application
-
-## Overview
-
 This is a MERN stack application that includes features such as user authentication, profile management, and an admin dashboard. The application is designed to handle user registration, login, profile updates, and more.
 
 ## Features
