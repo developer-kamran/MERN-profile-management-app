@@ -55,18 +55,24 @@ To get started with the application, follow these steps:
 
 ### Backend Setup
 
-1. Navigate to the `backend` directory:
+1. Run this command at the root of the app;
+
    ```bash
-   cd backend
    npm install
    
-2.  Create a .env file in the backend directory with the following variables:
+3.  Create a .env file in the root directory with the following variables:
+
     ```bash
     MONGO_URI=mongodb://localhost:27017/your-database
     PORT=5000
     JWT_SECRET=your-jwt-secret
 
-3. To become an Admin of the app set the environment variable in .env file of the root directory to:
+4. To become an Admin of the app set the environment variable in .env file of the root directory to:
+ 
     ```bash
     ADMIN=your_email
-   
+
+### To Start The APP Run This Command In The Root Directory Of The APP;
+
+   ```bash
+   npm run start
