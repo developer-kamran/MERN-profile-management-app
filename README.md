@@ -73,7 +73,7 @@ To get started with the application, follow these steps:
     ```bash
     ADMIN=your_email
 
-### TO START THE APP RUN THIS COMMAND AT THE ROOT DIRECTORY OF THE APP;
+### TO START THE APP RUN THIS COMMAND AT THE ROOT DIRECTORY OF THE APP:
 
    ```bash
    npm run start
