@@ -84,10 +84,11 @@ To get started with the application, follow these steps:
    npm install
    
 2.  Create a .env file in the backend directory with the following variables:
-   ```bash
-  MONGO_URI=mongodb://localhost:27017/your-database
-  JWT_SECRET=your-jwt-secret
+    ```bash
+    MONGO_URI=mongodb://localhost:27017/your-database
+    JWT_SECRET=your-jwt-secret
 
-3. To become an Admin of the app:
-   set the environment variable in .env file of the root directory to ADMIN=your_email
+3. To become an Admin of the app set the environment variable in .env file of the root directory to:
+    ```bash
+    ADMIN=your_email
    
