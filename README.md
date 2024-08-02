@@ -63,6 +63,7 @@ To get started with the application, follow these steps:
 3.  Create a .env file in the root directory with the following variables:
 
     ```bash
+    NODE_ENV=production
     MONGO_URI=mongodb://localhost:27017/your-database
     PORT=5000
     JWT_SECRET=your-jwt-secret
@@ -72,7 +73,7 @@ To get started with the application, follow these steps:
     ```bash
     ADMIN=your_email
 
-### To Start The APP Run This Command In The Root Directory Of The APP;
+### TO START THE APP RUN THIS COMMAND AT THE ROOT DIRECTORY OF THE APP;
 
    ```bash
    npm run start
