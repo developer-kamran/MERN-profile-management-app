@@ -8,14 +8,15 @@ This is a MERN stack application that includes features such as user authenticat
 
 - **User Authentication**: Register, login, and manage user sessions.
 - **Profile Management**: Update user profile information and profile images.
-- **Admin Dashboard**: View and manage user profiles (accessible only to admin users).
+- **Admin Dashboard**: View and manage user profiles (accessible only to admin users). Admins can also upload PDFs against user profiles.
 - **Responsive Design**: Optimized for both desktop and mobile screens.
 
 ## Technologies Used
 
 - **Frontend**: React, Material-UI
-- **Backend**: Node.js, Express.js, MongoDB
+- **Backend**: Node.js, Express.js, , MongoDB
 - **Authentication**: JSON Web Tokens (JWT)
+- **Styling**: Multer for handling file uploads
 - **State Management**: React Context API
 - **Styling**: Material-UI for component styling
 
